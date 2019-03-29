@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Swapi API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12  text-center">
+      <h1>The Star Wars API</h1>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6text-center">
+    <table border="2" id='tablePeople' class="table-dark table-hover">
+        <tr>
+            <th>Name</th>  
+            <th>Height</th>  
+            <th>Mass</th>
+            <th>Gender</th>  
+            <th>Hair Color</th>  
+            <th>Skin Color</th>
+            <th>Birth Year</th>
+            <th>Home World</th>  
+        </tr>    
+    </table>
+    <div class="col-lg-6  text-center">
+    <table border="2" id='tablePlanet' class="table-dark table-hover">
+  </div>
+  </div>
+  <br>
+  </div>
+  <div class="row">
+      <div class="col-lg-12 offset-1">
+          <button type="button" id="homeworld" class="btn btn-primary btn-lg">Cari Tahu Homeworld</button>
+      </div>
+      <br>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $.get('https://swapi.co/api/people/?page=1',function(data){
+            var peopleData = ''
+            $.each(data.results,function(index,item){
+                peopleData += `<tr>`
+                peopleData += `<td>${item.name}</td>`
+                peopleData += `<td>${item.height}</td>`
+                peopleData += `<td>${item.mass}</td>`
+                peopleData += `<td>${item.gender}</td>`
+                peopleData += `<td>${item.hair_color}</td>`
+                peopleData += `<td>${item.skin_color}</td>`
+                peopleData += `<td>${item.birth_year}</td>`
+                peopleData += `<td>${item.homeworld}</td>`
+                peopleData += `</tr>`
+            })
+            $('#tablePeople').append(peopleData)
+        })
+        $("#homeworld").click(function(){
+          
+          
+          $.get('https://swapi.co/api/planets/?page=1',function(data){
+            var planetData =''
+            planetData += '<tr>'
+              planetData += '<th>Name</th>'
+              planetData += '<th>Rotation Period</th>'
+              planetData += '<th>Orbital Period</th>'
+              planetData += '<th>Diameter</th>'
+              planetData += '<th>Climate</th>'
+              planetData += '<th>Terrain</th>'
+              planetData += '<th>Population</th>'
+              planetData += '<th>Gravity</th>'
+              planetData += '</tr>'
+            $.each(data.results,function(index,item){
+              
+              planetData += '<tr>'
+              planetData += `<td>${item.name}</td>`
+              planetData += `<td>${item.rotation_period}</td>`
+              planetData += `<td>${item.orbital_period}</td>`
+              planetData += `<td>${item.diameter}</td>`
+              planetData += `<td>${item.climate}</td>`
+              planetData += `<td>${item.terrain}</td>`
+              planetData += `<td>${item.population}</td>`
+              planetData += `<td>${item.gravity}</td>`
+              planetData += `</tr>`
+            })
+            $('#tablePlanet').append(planetData)
+          })
+        }); 
+    });
+
+   
+
+
+</script>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #413043;
+}
+
+h1 {
+    color: #DA694B;
+    text-align: center;
+}
+
+#container {
+    width: 25%;
+    margin: 40px auto;
+}
+
+#answer {
+    font-size: 30px;
+    line-height: 70px;
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    padding: 4px 8px;
+    text-align: center;
+    border: 5px solid #666;
+    border-bottom: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: #F6EEE3;
+}
+
+#numbers {
+    width: 100%;
+    height: 380px;
+    padding: 5px;
+    text-align: center;
+    background: #D1CEBE;
+    border: 5px solid #666;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+#numbers li {
+    line-height: 25px;
+    width: 50px;
+    height: 40px;
+    margin: 15px 7px;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px  rgba(0, 0, 0, 0.5);
+}
+
+#numbers li:hover {
+    color: #fff;
+    background: #666;
+}
+
+.background-blue {
+    background-color: #10455B;
+    color: #fff;
+}
+.background-yellow {
+    background-color: #FFAF20;
+    color: #fff;
+}
+
+
+
+@media(max-width: 960px) {
+    #container {
+        width: 45%;
+    }
+}
+
+@media(max-width: 540px) {
+    #container {
+        width: 55%;
+    }
+}
+
+@media(max-width: 480px) {
+    #container {
+        width: 65%;
+    }
+    h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    #numbers li {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media(max-width: 320px) {
+    #container {
+        width: 90%;
+    }
+}
+

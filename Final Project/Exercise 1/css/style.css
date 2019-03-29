@@ -1,0 +1,379 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(/img/hello.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 540px;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-family: Viga;
+    font-weight: 500;
+}
+
+.andikha {
+    padding-top: 50px;
+}
+.andikha img {
+    margin-top: -50px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.andikha h3 {
+    
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.andikha h3 span {
+    font-family: Viga;
+    font-weight: 500;
+}
+
+.andikha p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 30px 0 ;
+}
+
+.andikha hr {
+    width: 600px;
+}
+
+.andikha ul {
+    list-style-type: none;
+    
+}
+
+.andikha ul li {
+    padding: 10px;
+    margin-right: 30px;
+    text-align: center;
+    float: left;
+}
+
+.andikha li p {
+    font-size: 15px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0 ;
+}
+
+.progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.skill {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.skill h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.skill h3 span {
+    font-family: Viga;
+    font-weight: 500;
+}
+
+.skill .text {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0 ;
+}
+
+.album {
+    margin-top: 120px;
+    text-align: center;
+}
+
+
+.album h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.album h3 span {
+    font-family: Viga;
+    font-weight: 500;
+}
+
+
+.album p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0 ;
+}
+
+.hobi {
+    margin-top: 120px;
+    text-align: left;
+}
+
+.hobi h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.hobi h3 span {
+    font-family: Viga;
+    font-weight: 500;
+}
+
+.hobi p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 10px 0 ;
+}
+
+.hobi .pop {
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, -40px);
+}
+
+.hobi .pop.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.pendidikan .card {
+    margin-top: 10px;
+}
+
+.pendidikan h3 {
+    margin-top: 120px;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 52px;
+}
+
+.pendidikan h3 span {
+    font-family: Viga;
+    font-weight: 500;
+}
+
+.pendidikan .text {
+    text-align: right;
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 10px 0 ;
+}
+
+.pendidikan p {}
+    font-style: italic;
+}
+
+.pendidikan h5 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 25px;
+}
+
+
+.pendidikan figure img {
+    width: 60px;
+    margin: 20px 10px 5px;
+    opacity: 0.6;
+}
+
+.pendidikan figure img.utama {
+    opacity: 1;
+    width: 90px;
+    margin-top: 5px;
+}
+
+.pendidikan figure h5 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #1C2C5D;
+}
+
+.pendidikan figure p {
+    font-size: 12px;
+    color: #acacac;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.pendidikan .popAtas{
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, -50px);
+}
+
+.pendidikan .popBawah{
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0, 50px);
+}
+
+.pendidikan .popAtas.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.pendidikan .popBawah.muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.join {
+    margin-top: 120px;
+}
+
+.join h3 {
+    margin-top: 70px;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 52px;
+}
+
+.join h3 span {
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.footer p{
+    color: #acacac;
+    font-size: 18px;
+}
+
+
+/* utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+/* DESKTOP VER */
+@media (min-width: 992px) {
+    .navbar {
+        position: fixed;
+        background-color: black !important;
+    }
+
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+
+    .navbar.solid {
+        background-color:black;
+        transition: background-color 1s ease 0s;
+        box-shadow: 0 0 4px grey;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 750px;
+    }
+
+
+    .jumbotron .display-4 {
+        margin-top: 300px;
+        font-size: 62px;
+    }
+
+    .skill {
+        text-align: left;
+    }
+
+    .album {
+        text-align: left;
+    }
+
+
+    .pendidikan h3 {
+        text-align: right;
+    }
+
+    .join h3 {
+        text-align: left;
+    }
+}

@@ -1,0 +1,310 @@
+
+
+.navbar {
+    position: fixed;
+    background-color: black !important;
+}
+
+.navbar-brand {
+    font-family: viga;
+    font-size: 32px;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid white;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+
+.jumbotron {
+    height: 4500px;
+    background-color: black !important ;
+}
+
+.jumbotron .judul {
+    margin-top: 100px;
+}
+
+.jumbotron .display-4{
+    
+    box-shadow: 0px 4px 0px 0px  #FFFFFF;
+    margin-top: 80px;
+    font-size: 62px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+ .jumbotron .display-4 span{
+    font-size: 65px;
+    font-family: viga;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500px;
+}
+
+.jumbotron .lead {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0 ;
+}
+
+.jumbotron img {
+    margin-top: -40px;
+    width: 500px;
+    height: 500px;
+}
+
+.pengalaman {
+    margin-top: 300px;
+    
+}
+
+.pengalaman h3 {
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+}
+
+.pengalaman h3 span {
+    font-family: viga;
+    font-weight: 500;
+}
+
+.pengalaman p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0 ;
+}
+
+.list {
+    margin-top: 100px;
+}
+
+.list img {
+    width: 150px;
+    height: 150px;
+}
+
+.caption h3 {
+    color: white;
+    font-family: 'viga';
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 30px;
+} 
+
+.belajar {
+    margin-top: 200px;
+}
+
+.belajar h3 {  
+    margin: 70px 30px 30px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+}
+
+.belajar h3 span {
+    font-family: viga;
+    font-weight: 500;
+}
+
+.belajar p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 0px 30px ;
+}
+
+.belajar .image {
+    margin-top: 50px;
+}
+
+.belajar .carousel {
+    width: 550px;
+    
+}
+
+.exercise {
+    margin-top: 200px;
+}
+
+.exercise h3 {
+    margin-top: 50px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+}
+
+.exercise h3 span {
+    font-family: viga;
+    font-weight: 500;
+}
+
+.exercise .card{
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 80% !important;
+}
+
+.exercise .tiga {
+    margin-top: -100px;
+    margin-left: 600px;
+}
+
+.p {
+    margin-top: -130px;
+}
+
+.p p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.masukan {
+    margin-top: 350px;
+}
+
+.masukan h1 {
+    margin: 70px 30px 30px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+}
+
+.masukan h1 span {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: viga;
+}
+
+.masukan p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    text-align: left;
+    color: #acacac;
+    font-weight: 200;
+    margin: 0px 30px ;
+}
+
+
+.terimakasih {
+    margin-top: 200px;
+}
+
+.terimakasih h1 {
+    margin: 70px 30px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.terimakasih h1 span {
+    font-weight: 500;
+    font-family: viga;
+}
+
+.terimakasih p {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 0px 30px ;
+}
+
+.image {
+    margin-top: 100px;
+    margin-left: 280px;
+}
+
+.image img {
+    width: 500px;
+    height: 300px;
+}
+
+.page-footer {
+    margin-top: -50px;
+    background-color: black;
+}
+
+.page-footer .logo {
+    margin-left: 50px;
+    background-color: black;
+}
+
+.page-footer p {
+    margin-top: 10px;
+}
+
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: white;
+    padding: 30px;  
+}
+
+
+.modalbg {
+    background-color: black;
+    
+}
+
+.modalbg .modal-title, li {
+    color: white !important;
+}
+
+
+.btn{
+    font-family: 'Roboto';
+    color: white;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border-color: white;
+    cursor:pointer;
+    overflow: hidden; 
+    border-radius: 40px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+
